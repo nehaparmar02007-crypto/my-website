@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+     
+}
+
+/* PAGE */
+body {
+    background: #998e97;
+    padding: 20px;
+    position: relative;
+}
+
+/* FIXED HEADER */
+.header {
+    position: fixed;        /* header fix rahe */
+    top: 0;
+    left: 0;
+    width: 100%;            /* full width */
+    height: 60px;
+    background: #ffffff;
+    display: flex;          /* center ke liye */
+    justify-content: center;/* horizontal center */
+    align-items: center;    /* vertical center */
+    z-index: 1000;          /* upar rahe */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* HEADER TEXT */
+.section-title {
+    color: #d4f907;
+    background-color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* SINGLE LINE GRID (HORIZONTAL SCROLL) */
+.product-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+    
+}
+
+/* Hide scrollbar (Chrome, Edge, Safari) */
+.product-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    min-width: 200px;
+    max-width: 200px;
+    background: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* PRODUCT IMAGE */
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* PRODUCT INFO */
+.product-info {
+    padding: 10px;
+}
+
+.brand {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0e0303;
+}
+
+.name {
+    font-size: 13px;
+    color: #555;
+    margin: 4px 0;
+}
+
+/* PRICE */
+.price {
+    font-size: 13px;
+    display: auto auto auto auto;
+    align-items: center;
+    gap: 6px;
+}
+
+.price .current {
+    font-weight: 600;
+    color: #000;
+}
+
+.price .original {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.price .discount {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ff3f6c;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+    .product-card {
+        min-width: 160px;
+        max-width: 160px;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+}
+
+
+  
+

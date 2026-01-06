@@ -1,0 +1,38 @@
+body {
+background-color: #e6f7ff;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+.title {
+color: #ff5722;
+margin: 20px 0;
+}
+
+
+.gallery {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+
+.card {
+background: white;
+padding: 15px;
+border-radius: 12px;
+width: 150px;
+box-shadow: 0 4px 8px gray;
+}
+
+
+.card img {
+width: 100px;
+height: auto;
+}
+
+
+.card p {
+font-size: 18px;
+color: #333;
+}
